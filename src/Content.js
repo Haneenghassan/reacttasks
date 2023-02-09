@@ -2,6 +2,7 @@
 import React from 'react';
 import './Header.css';
 
+
 class Content extends React.Component{
 
     state={
@@ -12,8 +13,10 @@ class Content extends React.Component{
     change = () =>{
        this.setState ({
         name:"Abrar"
-
+       
        })
+
+
      
     }
     
@@ -21,13 +24,17 @@ class Content extends React.Component{
     render(){
         return ( 
                 <>
+
             <p className='text'>
                 Hello Here is Aqaba Cohort ❤
             </p>
             <button className='text' onClick={this.change}>change state</button>
             <p>{this.state.name}</p>
+            <p>{this.props.test}</p>
+       
             </>
         )
+
     }
     }
     
