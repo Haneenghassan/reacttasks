@@ -5,17 +5,11 @@ import Header from './Header.js';
 import Content from './Content';
 import Footer from './Footer.js';
 import Massege from './Massege'
+import Counter from './Lifecycle'
 import React ,{Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-// function App() {
-//   return (
-//     <div className="App">
-//      hello react
-//     </div>
-//   );
-// }
 class App extends Component {
   
 constructor(){
@@ -45,6 +39,7 @@ constructor(){
         bookImage:'https://m.media-amazon.com/images/I/51neNJ95N-L._SX218_BO1,204,203,200_QL40_FMwebp_.jpg'},
       ]
 }/>
+<Counter/>
     <Footer/>
     </>
     )

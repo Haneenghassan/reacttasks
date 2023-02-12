@@ -5,18 +5,14 @@ import Card from 'react-bootstrap/Card';
 
 class Massege extends React.Component{
 
- 
-  
-
-
   render()
   {
     const data = this.props.info;
     return (
       <>
-      {data.map((props,index) =>  (
+      {data.map((props,index) =>  (                              
          <Card style={{ width: '18rem' , display:'inline-block' }} key={index}>
-      <Card.Img variant="top" src={props.bookImage} />
+      <Card.Img variant="top" src={props.bookImage} style={{ height:'100vh'}} className="card"/>
       <Card.Body>
         <Card.Title>{props.bookTitle}</Card.Title>
         <Card.Text>
